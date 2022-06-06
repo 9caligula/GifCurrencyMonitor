@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:utext="${code}"></title>
+</head>
+<body>
+<div style="text-align: center;">
+    <h3>Курс валюты на сегодняшний день <td th:utext="${today}"></td></h3>
+    <h3>Курс валюты за вчерашний день <td th:utext="${yesterday}"></td></h3>
+    <img th:src="${getGif}"/>
+</div>
+</body>
+</html>
